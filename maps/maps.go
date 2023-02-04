@@ -1,0 +1,26 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	// var colors map[string]string
+
+	// colors := make(map[string]string)
+
+	// colors["red"] = "efpiheif"
+
+	colors := map[string]string{
+		"red":   "rihef",
+		"white": "eohfi",
+	}
+
+	printMap(colors)
+
+}
+
+func printMap(c map[string]string) {
+	for color, hex := range c {
+		fmt.Println("The color", color, "is", hex)
+	}
+}
